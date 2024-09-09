@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int votes[5] = {0, 0, 0, 0, 0};
+    int spoiltBallots = 0;
+    int vote;
+    cout << "Enter the votes (0 to stop): ";
+    while (true) {
+        cin >> vote;
+        if (vote == 0) {
+            break;
+        } else if (vote >= 1 && vote <= 5) {
+            votes[vote - 1]++;
+        } else {
+            spoiltBallots++;
+        }
+    }
+    for (int i = 0; i < 5; i++) {
+        cout << "Candidate " << i + 1 << ": " << votes[i] << " votes" << endl;
+    }
+    cout << "Spoilt Ballots: " << spoiltBallots << endl;
+    return 0;
+}
+
+output=
+
+Enter the votes (0 to stop): 5
+4
+3
+2
+1
+0
+Candidate 1: 1 votes
+Candidate 2: 1 votes
+Candidate 3: 1 votes
+Candidate 4: 1 votes
+Candidate 5: 1 votes
+Spoilt Ballots: 0

@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    char ch;
+    cout << "Enter a character: ";
+    cin >> ch;
+    cout << "The ASCII value of '" << ch << "' is: " << static_cast<int>(ch) << "\n";
+    return 0;
+}
+
+Output=
+
+Enter a character: A
+The ASCII value of 'A' is: 65

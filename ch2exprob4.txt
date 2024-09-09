@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+    float a, b, c, x;
+    a = 250;
+    b = 85;
+    c = 25;
+    x = a / b - c;
+    cout << "For a = 250, b = 85, c = 25, x = " << x << "\n";
+    a = 300;
+    b = 70;
+    c = 70;
+    x = a / b - c;
+    cout << "For a = 300, b = 70, c = 70, x = " << x << "\n";
+    return 0;
+}
+
+output=
+
+For a = 250, b = 85, c = 25, x = -22.0588
+For a = 300, b = 70, c = 70, x = -65.7143

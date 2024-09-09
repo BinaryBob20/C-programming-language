@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int math = 90, physics = 77, chemistry = 69;
+    cout << "math=" << math << "\n" << " physics=" << physics << "\n" << " chemistry=" << chemistry << "\n";
+    return 0;
+}
+
+output=
+
+math=90
+ physics=77
+ chemistry=69

@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+void swap(int &x, int &y) {
+    int temp = x; 
+    x = y;       
+    y = temp;  
+}
+
+int main() {
+    int a, b;
+    cout << "Enter two integers: ";
+    cin >> a >> b;
+    cout << "Before swapping: a = " << a << ", b = " << b << endl;
+    swap(a, b);
+    cout << "After swapping: a = " << a << ", b = " << b << endl;
+    return 0;
+}
+
+output=
+
+Enter two integers: 61 56
+Before swapping: a = 61, b = 56
+After swapping: a = 56, b = 61
